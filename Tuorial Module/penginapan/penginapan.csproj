@@ -1,0 +1,120 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{25BC5D75-BDA8-4BD5-8832-197FCAFA5980}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>penginapan</RootNamespace>
+    <AssemblyName>penginapan</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="MySql.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmCekIn.cs" />
+    <Compile Include="FrmCekIn.Designer.cs">
+      <DependentUpon>FrmCekIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCekOut.cs" />
+    <Compile Include="FrmCekOut.Designer.cs">
+      <DependentUpon>FrmCekOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLihatTamu.cs" />
+    <Compile Include="FrmLihatTamu.Designer.cs">
+      <DependentUpon>FrmLihatTamu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLihatTipe.cs" />
+    <Compile Include="FrmLihatTipe.Designer.cs">
+      <DependentUpon>FrmLihatTipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPenginapan.cs" />
+    <Compile Include="FrmPenginapan.Designer.cs">
+      <DependentUpon>FrmPenginapan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTambahKamar.cs" />
+    <Compile Include="FrmTambahKamar.Designer.cs">
+      <DependentUpon>FrmTambahKamar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTambahMenu.cs" />
+    <Compile Include="FrmTambahMenu.Designer.cs">
+      <DependentUpon>FrmTambahMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTambahPesanan.cs" />
+    <Compile Include="FrmTambahPesanan.Designer.cs">
+      <DependentUpon>FrmTambahPesanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTambahTamu.cs" />
+    <Compile Include="FrmTambahTamu.Designer.cs">
+      <DependentUpon>FrmTambahTamu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCekIn.resx">
+      <DependentUpon>FrmCekIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCekOut.resx">
+      <DependentUpon>FrmCekOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLihatTamu.resx">
+      <DependentUpon>FrmLihatTamu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLihatTipe.resx">
+      <DependentUpon>FrmLihatTipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPenginapan.resx">
+      <DependentUpon>FrmPenginapan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTambahKamar.resx">
+      <DependentUpon>FrmTambahKamar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTambahMenu.resx">
+      <DependentUpon>FrmTambahMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTambahPesanan.resx">
+      <DependentUpon>FrmTambahPesanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTambahTamu.resx">
+      <DependentUpon>FrmTambahTamu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
